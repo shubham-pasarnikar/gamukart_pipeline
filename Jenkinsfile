@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Example Build') {
             steps {
-                sh 'echo Hello World'
+                sh 'echo Hello World....test if hook is working'
             }
         }
         stage('Example Deploy') {
