@@ -1,30 +1,16 @@
 pipeline {
-  agent any
-  stages {
-    stage("build ") {
-      steps {     
-        bat 'mvn clean install'
-      }
+    agent any
+    stages {
+        stage('Example Build') {
+            steps {
+                sh 'echo Hello World'
+            }
+        }
+        stage('Example Deploy') {
+            steps {
+                sh 'echo Deploying'
+            }
+        }
     }
-    stage("stage3") {
-      steps {     
-        bat 'echo stage 4 completed. Check if hook working'
-      }
-    }
-    stage("stage4 ") {
-      steps {     
-        bat 'echo stage 4 completed'
-      }
-    }
-    stage("stage5 ") {
-      steps {     
-        bat 'echo stage 5 completed '
-      }
-    }
-    stage("stage6 ") {
-      steps {     
-        bat 'echo stage 6 completed '
-      }
-    }
-  }
 }
+
