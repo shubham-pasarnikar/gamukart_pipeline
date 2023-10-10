@@ -8,7 +8,7 @@ pipeline {
     }
     stage("stage3") {
       steps {     
-        bat 'echo stage 3 completed'
+        bat 'echo stage 4 completed. Check if hook working'
       }
     }
     stage("stage4 ") {
